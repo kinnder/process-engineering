@@ -18,7 +18,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.release>13</maven.compiler.release>
-		<pmdVersion>6.52.0</pmdVersion>
+		<pmdVersion>7.10.0</pmdVersion>
 		<pmdRuleset>${project.basedir}</pmdRuleset>
 		<jupiterVersion>5.9.1</jupiterVersion>
 	</properties>
