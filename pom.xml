@@ -18,7 +18,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.release>13</maven.compiler.release>
-		<pmdVersion>7.10.0</pmdVersion>
+		<pmdVersion>7.14.0</pmdVersion>
 		<pmdRuleset>${project.basedir}</pmdRuleset>
 		<jupiterVersion>5.9.1</jupiterVersion>
 	</properties>
@@ -72,7 +72,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-pmd-plugin</artifactId>
-				<version>3.19.0</version>
+				<version>3.21.0</version>
 				<configuration>
 					<linkXRef>false</linkXRef>
 					<analysisCache>true</analysisCache>
@@ -89,28 +89,6 @@
 						</goals>
 					</execution>
 				</executions>
-				<dependencies>
-					<dependency>
-						<groupId>net.sourceforge.pmd</groupId>
-						<artifactId>pmd-core</artifactId>
-						<version>${pmdVersion}</version>
-					</dependency>
-					<dependency>
-						<groupId>net.sourceforge.pmd</groupId>
-						<artifactId>pmd-java</artifactId>
-						<version>${pmdVersion}</version>
-					</dependency>
-					<dependency>
-						<groupId>net.sourceforge.pmd</groupId>
-						<artifactId>pmd-javascript</artifactId>
-						<version>${pmdVersion}</version>
-					</dependency>
-					<dependency>
-						<groupId>net.sourceforge.pmd</groupId>
-						<artifactId>pmd-jsp</artifactId>
-						<version>${pmdVersion}</version>
-					</dependency>
-				</dependencies>
 			</plugin>
 			<!-- https://mvnrepository.com/artifact/org.jacoco/jacoco-maven-plugin -->
 			<plugin>
